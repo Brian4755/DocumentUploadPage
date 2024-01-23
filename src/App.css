@@ -1,0 +1,15 @@
+.document-page {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  /* grid-template-rows: repeat(6, 5 rem); */
+  border: solid black 5px;
+  min-height: 350px;
+}
+
+.document-page > div {
+  border: solid blue 1px;
+}
+
+.document-title, .document-confirmation {
+  grid-column: -1/1;
+}
