@@ -14,12 +14,15 @@ const TestingCenter = () => {
   }]
 
   return ( 
-    <div>
+    <div className="testing-centers">
       Client
       {testingCenters.map(function(data) {
         return (
-          <div>
+          <div key={data.name}>
             {data.name}
+            <select className="import-selection">
+              <option value=''>Select Client</option>
+            </select>
           </div>
         )
       })}

@@ -25,14 +25,14 @@ p {
   left: 50%;
   transform: translate(-50%, -50%);
   min-height: 85dvh;
-  min-width: 50dvw;
+  min-width: 750px;
   display: grid;
   grid-template-columns: 2fr 1fr;
-  row-gap: 20px;
+  grid-template-rows: repeat(7, auto);
+  /* row-gap: 20px; */
   column-gap: 40px;
   padding: 0 3rem;
   text-wrap: nowrap;
-  /* grid-template-rows: repeat(6, 5 rem); */
 }
 
 .document-page > div {
@@ -61,4 +61,27 @@ p {
 
 .import-selection {
   align-self: center;
+}
+
+.testing-centers {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  grid-row: span 2;
+}
+
+.testing-centers select {
+  margin-left: 25px;
+}
+
+.document-file-import {
+  grid-row: span 2;
+}
+
+.tolerance-window {
+  grid-column: -1/1;
+}
+
+.location-checking {
+  /* height: fit-content; */
 }
