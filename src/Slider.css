@@ -32,7 +32,7 @@
   background-color: white;
   height: 15px;
   width: 15px;
-  left: 0.5px;
+  left: 1.5px;
   bottom: 1.5px;
   transition: .4s;
 }
@@ -42,7 +42,7 @@ input:checked + .slider {
 }
 
 input:checked + .slider:before {
-  transform: translateX(17.5px);
+  transform: translateX(16px);
 }
 
 

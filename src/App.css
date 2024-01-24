@@ -7,6 +7,7 @@ body {
 }
 
 button {
+  cursor: pointer;
   background-color: rgb(5, 29, 89);
   color: white;
   border: 0px;
@@ -23,7 +24,7 @@ p {
   border: solid black 2px;
   border-radius: 18px;
   min-height: 85dvh;
-  width: clamp(800px, 65dvw, 1000px);
+  width: clamp(600px, 65dvw, 800px);
   display: grid;
   grid-template-columns: 3fr 2fr;
   grid-template-rows: repeat(7, auto);
@@ -98,6 +99,7 @@ p {
 }
 
 .document-file-import input::before {
+  cursor: pointer;
   visibility: visible;
   content: 'Upload Manifest';
   background: rgb(5, 29, 89) none repeat scroll 0 0;
@@ -108,4 +110,41 @@ p {
   font-weight: normal;
   padding: 15px 15px;
   text-shadow: none;
+}
+
+label input {
+  vertical-align: -1px;
+}
+
+input[type='radio'] {
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  accent-color: rgb(5, 29, 89);
+}
+
+.document-confirmation {
+  font-size: 14px;
+  justify-self: center;
+  text-align: center;
+}
+
+.cancel-btn, .continue-btn {
+  margin-top: 25px;
+  margin-bottom: 15px;
+  width: 160px;
+  height: 28px;
+  border-radius: 3px;
+  font-weight: 600;
+  font-size: 11px;
+}
+
+.continue-btn {
+  margin-right: 30px;
+}
+
+.cancel-btn {
+  color: rgb(215, 170, 112);
+  background-color: white;
+  border: 2.3px solid rgb(215, 170, 112);
 }
