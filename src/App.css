@@ -15,6 +15,7 @@ button {
 
 p {
   color: rgb(113, 197, 156);
+  font-weight: 400;
 }
 
 .document-page {
@@ -52,21 +53,28 @@ p {
 }
 
 .document-title {
-  margin-top: 2.5rem;
+  margin-top: 3.25rem;
   justify-self: center;
   align-self: center;
   font-size: 1.2rem;
+  margin-bottom: 20px;
 }
 
 .import-selection {
   align-self: center;
+  font-weight: 600;
 }
 
 .testing-centers {
+  margin-top: 15px;
   grid-row: span 3;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+}
+
+.testing {
+  margin-top: 20px;
 }
 
 .testing-centers select {
@@ -94,6 +102,10 @@ p {
   min-width: 72px;
 }
 
+.tolerance-window > div {
+  font-weight: 400;
+}
+
 .document-file-import input::file-selector-button {
   visibility: hidden;
   font-size: 0px;
@@ -119,11 +131,12 @@ input[type='radio'] {
   font-size: 14px;
   justify-self: center;
   text-align: center;
+  margin-top: 25px;
 }
 
 .cancel-btn, .continue-btn {
-  margin-top: 25px;
-  margin-bottom: 15px;
+  margin-top: 15px;
+  margin-bottom: 35px;
   width: 160px;
   height: 28px;
   border-radius: 3px;
