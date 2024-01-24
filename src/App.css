@@ -1,9 +1,19 @@
+body {
+  background-color: rgb(176, 176, 176);
+}
+
 .document-page {
+  background-color: white;
+  border: solid black 2px;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-height: 80dvh;
   display: grid;
   grid-template-columns: 2fr 1fr;
   /* grid-template-rows: repeat(6, 5 rem); */
-  border: solid black 5px;
-  min-height: 350px;
 }
 
 .document-page > div {
