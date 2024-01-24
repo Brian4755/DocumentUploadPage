@@ -1,6 +1,7 @@
 import ClientSelect from "./ClientSelect";
 import Confirmation from "./Confirmation";
 import SplitSchedule from "./SplitSchedule";
+import Tolerance from "./Tolerance";
 
 const Document = () => {
   return ( 
@@ -25,9 +26,7 @@ const Document = () => {
         Elapse Data Checking:
         <p>No Elapsed Dates!</p>
       </div>
-      <div className="tolerance-window">
-        Tolerance Window
-      </div>
+      <Tolerance />
       <Confirmation />
     </div>
    );
