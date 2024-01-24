@@ -60,9 +60,29 @@ p {
   margin-bottom: 20px;
 }
 
+.document-title::before {
+  content: '';
+  width: 165px;
+  height: 1px;
+  background-color: black;
+  opacity: 0.5;
+  position: absolute;
+  transform: translateY(25px);
+}
+
 .import-selection {
-  align-self: center;
+  align-self: flex-start;
   font-weight: 600;
+}
+
+.document-file-import::before {
+  content: '';
+  width: 250px;
+  height: 1px;
+  background-color: black;
+  opacity: 0.5;
+  position: absolute;
+  transform: translateY(-10px);
 }
 
 .testing-centers {
@@ -71,6 +91,16 @@ p {
   display: flex;
   flex-direction: column;
   /* justify-content: space-between; */
+}
+
+.testing-centers::before {
+  content: '';
+  width: 250px;
+  height: 1px;
+  background-color: black;
+  opacity: 0.5;
+  position: absolute;
+  transform: translateY(-10px);
 }
 
 .testing {
@@ -88,6 +118,16 @@ p {
 
 .tolerance-window {
   grid-column: -1/1;
+}
+
+.tolerance-window::before {
+  content: '';
+  width: 250px;
+  height: 1px;
+  background-color: black;
+  opacity: 0.5;
+  position: absolute;
+  transform: translateY(-10px);
 }
 
 .tolerance-window > div {
@@ -214,6 +254,16 @@ p > span {
   margin: 0;
 }
 
+.elapse-data::before {
+  content: '';
+  width: 250px;
+  height: 1px;
+  background-color: black;
+  opacity: 0.5;
+  position: absolute;
+  transform: translateY(-10px);
+}
+
 .schedule-container {
   align-self: flex-end;
   margin-bottom: 10px;
@@ -221,8 +271,19 @@ p > span {
 
 .location-checking {
   align-self: center;
+  margin-top: 20px;
+}
+
+.location-checking::before {
+  content: '';
+  width: 250px;
+  height: 1px;
+  background-color: black;
+  opacity: 0.5;
+  position: absolute;
+  transform: translateY(-15px);
 }
 
 .location-checking > p {
-  margin: 5px;
+  margin-top: 5px;
 }
