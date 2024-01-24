@@ -1,4 +1,4 @@
-import TestingCenter from "./TestingCenter";
+import ClientSelect from "./ClientSelect";
 import Confirmation from "./Confirmation";
 import SplitSchedule from "./SplitSchedule";
 
@@ -20,7 +20,7 @@ const Document = () => {
         Location Checking
         <p>All Available!</p>
       </div>
-      <TestingCenter />
+      <ClientSelect />
       <div className="elapse-data">
         Elapse Data Checking:
         <p>No Elapsed Dates!</p>

@@ -1,4 +1,17 @@
-const TestingCenter = () => {
+import { useState } from "react"
+
+const ClientSelect = () => {
+
+  const [check, setCheck] = useState(true)
+
+  function handleCheckSingle() {
+    setCheck(true)
+  }
+  function handleCheckMultiple() {
+    setCheck(false)
+  }
+
+
 
   const testingCenters = [{
     name: 'Testing Center 1'
@@ -16,6 +29,12 @@ const TestingCenter = () => {
   return ( 
     <div className="testing-centers">
       Client
+      <label>
+        <input type="radio" checked={check} onClick={handleCheckSingle}/>
+        Single
+        <input type="radio" checked={!check} onClick={handleCheckMultiple}/>
+        Multiple
+      </label>
       {testingCenters.map(function(data) {
         return (
           <div key={data.name}>
@@ -30,4 +49,4 @@ const TestingCenter = () => {
    );
 }
  
-export default TestingCenter;
+export default ClientSelect;

@@ -18,8 +18,6 @@ const SplitSchedule = () => {
       <label>
         <input type="radio" checked={check} onClick={handleCheckYes}/>
         Yes
-      </label>
-      <label>
         <input type="radio" checked={!check} onClick={handleCheckNo}/>
         No
       </label>
