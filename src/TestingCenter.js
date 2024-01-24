@@ -1,6 +1,7 @@
 const TestingCenter = () => {
   return ( 
     <div>
+      Client
       <div>
         Testing Center 1
       </div>

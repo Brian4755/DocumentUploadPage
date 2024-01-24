@@ -11,12 +11,13 @@ const Document = () => {
       <select className="import-selection">
         <option value=''>Select Import Name:</option>
       </select>
+      <div>
+        Split schedule using social distancing?
+      </div>
       <div className="document-file-import">Select a manifest that you'd like to import</div>
+      <div>Location Checking</div>
       <div>Elapse Data Checking:</div>
       <div>Tolerance Window</div>
-      <div>Split schedule using social distancing?</div>
-      <div>Location Checking</div>
-      <div>Client</div>
       <TestingCenter />
       <Confirmation />
     </div>

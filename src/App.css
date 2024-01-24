@@ -1,6 +1,9 @@
 body {
   background-color: rgb(176, 176, 176);
-  color: rgb(5, 29, 89);
+  color: rgb(61, 89, 114);
+  font-family: 'Onset', sans-serif;
+  font-weight: 600;
+  font-size: 13px;
 }
 
 .document-page {
@@ -43,6 +46,7 @@ body {
   margin-top: 1rem;
   justify-self: center;
   align-self: center;
+  font-size: 1.2rem;
 }
 
 .import-selection {
