@@ -23,7 +23,7 @@ const Tolerance = () => {
           Toggle {slider ? 'ON' : 'OFF'}
         </div>
         <div>
-          <FontAwesomeIcon icon={faClock} />
+          <FontAwesomeIcon id='clock-icon' icon={faClock} />
           Select Tolerance Level
         </div>
       </div>

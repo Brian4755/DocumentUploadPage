@@ -44,7 +44,7 @@ const ClientSelect = () => {
             <select className="testing-selection">
               <option value=''>Select Client</option>
             </select>
-            <FontAwesomeIcon icon={faClock} />
+            <FontAwesomeIcon id='clock-icon' icon={faClock} />
           </div>
         )
       })}

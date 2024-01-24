@@ -294,3 +294,10 @@ p > span {
   margin-top: 9px;
   margin-left: calc(50% - 12.5px);
 }
+
+#clock-icon {
+  font-size: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
