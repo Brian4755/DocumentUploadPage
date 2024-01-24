@@ -37,7 +37,7 @@ const ClientSelect = () => {
       </label>
       {testingCenters.map(function(data) {
         return (
-          <div key={data.name}>
+          <div className="testing" key={data.name}>
             {data.name}
             <select className="testing-selection">
               <option value=''>Select Client</option>

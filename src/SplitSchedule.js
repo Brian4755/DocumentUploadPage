@@ -12,7 +12,7 @@ const SplitSchedule = () => {
 
 
   return ( 
-    <div>
+    <div className="schedule-container">
       Split schedule using social distancing?
       <br />
       <label>
