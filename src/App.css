@@ -78,15 +78,13 @@ p {
   grid-column: -1/1;
 }
 
-.tolerance-window div {
+.tolerance-window > div {
   display: flex;
   align-items: center;
 }
 
 .toggle-text {
-  margin-top: 2px;
-}
-
-.location-checking {
-  /* height: fit-content; */
+  margin: 2px 8px 0px 8px;
+  padding-right: 8px;
+  border-right: solid black 1px;
 }

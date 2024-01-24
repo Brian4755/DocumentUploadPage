@@ -20,6 +20,9 @@ const Tolerance = () => {
         <div className='toggle-text'>
           Toggle {slider ? 'ON' : 'OFF'}
         </div>
+        <div>
+          Select Tolerance Level
+        </div>
       </div>
     </div>
    );
