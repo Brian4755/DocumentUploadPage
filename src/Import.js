@@ -1,10 +1,15 @@
-import { useCallback } from "react";
+import { useCallback, useState } from "react";
 import { useDropzone } from "react-dropzone";
 
 const Import = () => {
   const onDrop = useCallback(acceptedFiles => {
-    console.log(acceptedFiles)
+    console.log(acceptedFiles[0].size)
+    setFileName(acceptedFiles[0].name)
+    setFileSize(acceptedFiles[0].size/1000 + 'KB')
   },[])
+
+  const [fileName, setFileName] = useState()
+  const [fileSize, setFileSize] = useState()
 
   const {getRootProps, getInputProps, isDragActive} = useDropzone({onDrop})
 
@@ -17,11 +22,13 @@ const Import = () => {
           {
             isDragActive ?
               <p>Drop the files here ...</p> :
-              <p>Drag & Drop Here Or <span>Browse</span></p>
+              <p>Drag & Drop Here Or <span>Browser</span></p>
           }
         </div>
         <button>Upload manifest</button>
       </div>
+      <div>{fileName}</div>
+      <div>{fileSize}</div>
     </div>
    );
 }
