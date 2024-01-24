@@ -18,7 +18,8 @@ p {
 
 .document-page {
   background-color: white;
-  margin: auto;
+  margin-right: auto;
+  margin-left: auto;
   border: solid black 2px;
   border-radius: 18px;
   min-height: 85dvh;
@@ -29,6 +30,7 @@ p {
   column-gap: 40px;
   padding: 0 3rem;
   text-wrap: nowrap;
+  margin-top: calc((100dvh - 85dvh)*0.5);
 }
 
 .document-page > div {
