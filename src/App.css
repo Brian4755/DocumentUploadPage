@@ -223,7 +223,7 @@ select {
 .drag-n-drop {
   border: dashed;
   cursor: pointer;
-  height: 100px;
+  height: 90px;
   margin-top: 10px;
   margin-left: 10px;
   margin-right: 10px;
@@ -247,7 +247,7 @@ p > span {
   font-size: 11px;
   padding: 5px;
   border-radius: 4px;
-  margin-top: 7px;
+  margin-top: 12px;
 }
 
 .elapse-data > p {
@@ -286,4 +286,11 @@ p > span {
 
 .location-checking > p {
   margin-top: 5px;
+}
+
+#icon-file {
+  color: rgb(252, 157, 34);
+  font-size: 25px;
+  margin-top: 9px;
+  margin-left: calc(50% - 12.5px);
 }

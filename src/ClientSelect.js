@@ -1,4 +1,6 @@
 import { useState } from "react"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faClock} from '@fortawesome/free-regular-svg-icons'
 
 const ClientSelect = () => {
 
@@ -42,6 +44,7 @@ const ClientSelect = () => {
             <select className="testing-selection">
               <option value=''>Select Client</option>
             </select>
+            <FontAwesomeIcon icon={faClock} />
           </div>
         )
       })}
