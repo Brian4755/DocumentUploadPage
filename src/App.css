@@ -18,31 +18,27 @@ p {
 
 .document-page {
   background-color: white;
+  margin: auto;
   border: solid black 2px;
   border-radius: 18px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   min-height: 85dvh;
-  min-width: 750px;
+  width: clamp(800px, 65dvw, 1000px);
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 3fr 2fr;
   grid-template-rows: repeat(7, auto);
-  /* row-gap: 20px; */
   column-gap: 40px;
   padding: 0 3rem;
   text-wrap: nowrap;
 }
 
 .document-page > div {
-  border: solid blue 1px;
+  /* border: solid blue 1px; */
 }
 
 .document-close {
   position: absolute;
-  margin: 1.25rem;
-  margin-top: 1.25rem;
+  margin-left: -1.5rem;
+  margin-top: 1.5rem;
   height: 1.5rem;
   width: 1.5rem;
   border-radius: 5px;
