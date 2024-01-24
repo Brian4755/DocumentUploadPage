@@ -14,10 +14,20 @@ const Document = () => {
       <div>
         Split schedule using social distancing?
       </div>
-      <div className="document-file-import">Select a manifest that you'd like to import</div>
-      <div>Location Checking</div>
-      <div>Elapse Data Checking:</div>
-      <div>Tolerance Window</div>
+      <div className="document-file-import">
+        Select a manifest that you'd like to import
+      </div>
+      <div>
+        Location Checking
+        <p>All Available!</p>
+      </div>
+      <div>
+        Elapse Data Checking:
+        <p>No Elapsed Dates!</p>
+      </div>
+      <div>
+        Tolerance Window
+      </div>
       <TestingCenter />
       <Confirmation />
     </div>

@@ -6,6 +6,16 @@ body {
   font-size: 13px;
 }
 
+button {
+  background-color: rgb(5, 29, 89);
+  color: white;
+  border: 0px;
+}
+
+p {
+  color: rgb(113, 197, 156);
+}
+
 .document-page {
   background-color: white;
   border: solid black 2px;
@@ -51,10 +61,4 @@ body {
 
 .import-selection {
   align-self: center;
-}
-
-button {
-  background-color: rgb(5, 29, 89);
-  color: white;
-  border: 0px;
 }

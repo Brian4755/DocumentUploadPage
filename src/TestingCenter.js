@@ -1,19 +1,28 @@
 const TestingCenter = () => {
+
+  const testingCenters = [{
+    name: 'Testing Center 1'
+  },
+  {
+    name: 'Testing Center 2'
+  },
+  {
+    name: 'Testing Center 3'
+  },
+  {
+    name: 'Testing Center 4'
+  }]
+
   return ( 
     <div>
       Client
-      <div>
-        Testing Center 1
-      </div>
-      <div>
-        Testing Center 2
-      </div>
-      <div>
-        Testing Center 3
-      </div>
-      <div>
-        Testing Center 4
-      </div>
+      {testingCenters.map(function(data) {
+        return (
+          <div>
+            {data.name}
+          </div>
+        )
+      })}
     </div>
    );
 }
