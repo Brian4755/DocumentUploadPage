@@ -39,7 +39,7 @@ const ClientSelect = () => {
         return (
           <div key={data.name}>
             {data.name}
-            <select className="import-selection">
+            <select className="testing-selection">
               <option value=''>Select Client</option>
             </select>
           </div>

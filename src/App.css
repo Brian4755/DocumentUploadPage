@@ -28,7 +28,7 @@ p {
   display: grid;
   grid-template-columns: 3fr 2fr;
   grid-template-rows: repeat(7, auto);
-  column-gap: 40px;
+  column-gap: 50px;
   padding: 0 3rem;
   text-wrap: nowrap;
   margin-top: calc((100dvh - 85dvh)*0.5);
@@ -113,7 +113,12 @@ p {
 }
 
 label input {
-  vertical-align: -1px;
+  vertical-align: -3px;
+}
+
+label {
+  font-weight: 400;
+  font-size: 10px;
 }
 
 input[type='radio'] {
@@ -147,4 +152,20 @@ input[type='radio'] {
   color: rgb(215, 170, 112);
   background-color: white;
   border: 2.3px solid rgb(215, 170, 112);
+}
+
+select {
+  color: rgb(5, 29, 89);
+  height: 25px;
+  border-radius: 5px;
+}
+
+.testing-selection {
+  width: 110px;
+  text-align: center;
+}
+
+.testing-centers > div {
+  font-size: 10px;
+  font-weight: 400;
 }
