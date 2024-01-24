@@ -87,4 +87,23 @@ p {
   margin: 2px 8px 0px 8px;
   padding-right: 8px;
   border-right: solid black 1px;
+  min-width: 72px;
+}
+
+.document-file-import input::file-selector-button {
+  visibility: hidden;
+  font-size: 0px;
+}
+
+.document-file-import input::before {
+  visibility: visible;
+  content: 'Upload Manifest';
+  background: rgb(5, 29, 89) none repeat scroll 0 0;
+  border-radius: 6px;
+  box-shadow: none;
+  color: white;
+  font-size: 16px;
+  font-weight: normal;
+  padding: 15px 15px;
+  text-shadow: none;
 }

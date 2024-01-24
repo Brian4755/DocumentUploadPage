@@ -2,6 +2,7 @@ import ClientSelect from "./ClientSelect";
 import Confirmation from "./Confirmation";
 import SplitSchedule from "./SplitSchedule";
 import Tolerance from "./Tolerance";
+import Import from "./Import";
 
 const Document = () => {
   return ( 
@@ -14,9 +15,7 @@ const Document = () => {
         <option value=''>Select Import Name:</option>
       </select>
       <SplitSchedule />
-      <div className="document-file-import">
-        Select a manifest that you'd like to import
-      </div>
+      <Import />
       <div className="location-checking">
         Location Checking
         <p>All Available!</p>
