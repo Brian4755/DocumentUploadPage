@@ -4,8 +4,11 @@ import Confirmation from "./Confirmation";
 const Document = () => {
   return ( 
     <div className="document-page">
-      <div className="document-title">Document Upload</div>
-      <select>
+      <button className="document-close">X</button>
+      <div className="document-title">
+        Document Upload
+      </div>
+      <select className="import-selection">
         <option value=''>Select Import Name:</option>
       </select>
       <div className="document-file-import">Select a manifest that you'd like to import</div>

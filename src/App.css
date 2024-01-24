@@ -1,18 +1,24 @@
 body {
   background-color: rgb(176, 176, 176);
+  color: rgb(5, 29, 89);
 }
 
 .document-page {
   background-color: white;
   border: solid black 2px;
-  border-radius: 10px;
+  border-radius: 18px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  min-height: 80dvh;
+  min-height: 85dvh;
+  min-width: 50dvw;
   display: grid;
   grid-template-columns: 2fr 1fr;
+  row-gap: 20px;
+  column-gap: 40px;
+  padding: 0 3rem;
+  text-wrap: nowrap;
   /* grid-template-rows: repeat(6, 5 rem); */
 }
 
@@ -20,6 +26,31 @@ body {
   border: solid blue 1px;
 }
 
+.document-close {
+  position: absolute;
+  margin: 1.25rem;
+  margin-top: 1.25rem;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 5px;
+}
+
 .document-title, .document-confirmation {
   grid-column: -1/1;
+}
+
+.document-title {
+  margin-top: 1rem;
+  justify-self: center;
+  align-self: center;
+}
+
+.import-selection {
+  align-self: center;
+}
+
+button {
+  background-color: rgb(5, 29, 89);
+  color: white;
+  border: 0px;
 }
