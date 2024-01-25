@@ -17,7 +17,7 @@ const Document = () => {
       <SplitSchedule />
       <Import />
       <div className="location-checking">
-        Location Checking
+        Location Checking:
         <p>All Available!</p>
       </div>
       <ClientSelect />
