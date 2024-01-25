@@ -26,7 +26,7 @@ const Import = () => {
           {
             isDragActive ?
               <p>Drop the files here ...</p> :
-              <p>Drag & Drop Here Or <span>Browser</span></p>
+              <p>Drag & Drop Here Or <span>Browse</span></p>
           }
         </div>
         <button>Upload manifest</button>
