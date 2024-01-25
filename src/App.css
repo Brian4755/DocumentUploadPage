@@ -76,7 +76,7 @@ p {
   width: 250px;
   height: 1px;
   background-color: black;
-  opacity: 0.5;
+  opacity: 0.3;
   position: absolute;
   transform: translateY(-10px);
 }
@@ -274,7 +274,7 @@ p > span {
   width: 250px;
   height: 1px;
   background-color: black;
-  opacity: 0.5;
+  opacity: 0.3;
   position: absolute;
   transform: translateY(-15px);
 }
