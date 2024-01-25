@@ -2,6 +2,7 @@ import { useCallback, useState } from "react";
 import { useDropzone } from "react-dropzone";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faFileLines} from '@fortawesome/free-solid-svg-icons'
+import { faFileImage } from "@fortawesome/free-regular-svg-icons";
 
 const Import = () => {
   const onDrop = useCallback(acceptedFiles => {
@@ -30,8 +31,24 @@ const Import = () => {
         </div>
         <button>Upload manifest</button>
       </div>
-      <div>{fileName}</div>
-      <div>{fileSize}</div>
+      <div className="file-container">
+        {fileName ? 
+          <>
+            <FontAwesomeIcon icon={faFileImage} className='image-icon'/> 
+            <div className="file-name">{fileName}</div>
+            <div className="file-size">{fileSize}</div>
+            <span className="file-upload"></span>
+          </>
+          : 
+          <>
+            <FontAwesomeIcon icon={faFileImage} className='image-icon' id='opacity-zero'/> 
+            <div className="file-name">{fileName}</div>
+            <div className="file-size">{fileSize}</div>
+            <span className="file-upload" id='opacity-zero'></span>
+          </>
+        }
+      </div>
+      <div className="divider"></div>
     </div>
    );
 }
